@@ -1,0 +1,46 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+	<script src="view_users.js" > </script>
+	<script src="filter.js" > </script>
+	<link rel="stylesheet" style="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" style="text/css" href="user-view-style.css">
+</head>
+<body> 
+
+<div class = "user-div" ng-app="listUsers" ng-controller="userController"> 
+<user> </user>
+<pre>$location.path() = {{$location.path()}}</pre>
+<!-- <label> Show Active Users <input type="checkbox" ng-click="isActive()" ng-modal="active-users"> </label> -->
+<table class="table table-bordered table-hover">
+<thead>
+<tr>
+<th> S.No </th>
+<th> User Name </th>
+<th> Phone </th>
+<th> Email </th>
+<th> City </th>
+<th> Status </th>
+</tr>
+</thead>
+<tbody>
+<tr data-ng-repeat="user in users | activeUsers | orderBy: 'name' ">
+<td> {{$index+1}} </td>
+<td> {{user.name | toUpperCase}} </td>
+<td> {{user.phone}} </td>
+<td> {{user.email}} </td>
+<td> {{user.city}} </td>
+<td> {{user.status}} </td>
+<td> <a href = "#show/"> <button type="submit" ng-click="showUser(user)" class="btn btn-default" addbtn>  View User </button> </a></td>
+<td>  <a href = "#remove"> <button type="submit" ng-click="remove($index, user.name)" class="btn btn-default" addbtn>  Delete  </button> </a></td>
+</tr>
+
+</tbody>
+
+</table>
+<div ng-view> </div>
+</div>
+
+</body>
+</html>

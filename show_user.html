@@ -1,0 +1,25 @@
+<html>
+<head>
+	<link rel="stylesheet" style="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" style="text/css" href="user-view-style.css">
+</head>
+<body> 
+<div>
+<form name="usrFrm">
+<div class="mainDiv" ng-show="user">
+	<div class="alert alert-success fade in">
+         View User Details : <strong>{{user.name}}!</strong>
+    </div>	<br>
+	<ul class="list-inline">
+		<li> <label style = "width:100px;"> User Name </label>{{user.name}} </li><br>
+		<li> <label style = "width:100px;"> Phone </label>{{user.phone}}</li><br>
+		<li> <label style = "width:100px;"> Email </label>{{user.email}}</li><br>
+		<li> <label style = "width:100px;"> City </label>{{user.city}}</li><br>
+		<li> <label style = "width:100px;"> Status </label>{{user.status}}</li><br>
+		<li> <label style = "width:100px;"> Address </label>{{user.Address}}</li><br>
+	</ul>
+</div>
+	</form>
+	</div>
+</body>
+</html>

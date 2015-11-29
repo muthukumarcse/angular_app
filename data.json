@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Muthu",
+        "phone": "965689696",
+        "email": "muthu@gmail.com",
+        "city": "chennai",
+		"status":true,
+		"Address": "No 10, Ram Nagar, Bough Road, Chennai-28"
+    },
+    {
+        "name": "Kumar",
+        "phone": "986589658",
+        "email": "kumar@gmail.com",
+        "city": "Erode",
+		"status":true,
+		"Address": "No 1, Gandhi Road, IIT Colony, Erode-42"
+    },
+    {
+        "name": "Sam",
+        "phone": "879568254",
+        "email": "sam@gmail.com",
+        "city": "Coimbatore",
+		"status":false,
+		"Address": "No 4/V, Rs Puram, Gandhi park, Cbe-02"
+    },
+    {
+        "name": "Viki",
+        "phone": "8798987872",
+        "email": "viki@gmail.com",
+        "city": "Mumbai",
+		"status":false,
+		"Address": "No 5/C, Rawada, 1st Road, Mumbai-28"
+    },
+    {
+        "name": "Miki",
+        "phone": "912589632",
+        "email": "miki@gmail.com",
+        "city": "Bangalore",
+		"status":true,
+		"Address": "No 6/B, Ram Nagar, 2nd street, Bangalore-28"
+    },
+    {
+        "name": "Ramiki",
+        "phone": "987568965",
+        "email": "ramki@gmail.com",
+        "city": "Pune",
+		"status":true,
+		"Address": "No 12/A,  7th street, Pune-28"
+    },
+    {
+        "name": "Tom",
+        "phone": "044-5846859",
+        "email": "tom@gmail.com",
+        "city": "Delhi",
+		"status":true,
+		"Address": "No 10/11, 7 race-cource, Delhi-28"
+    }
+]
